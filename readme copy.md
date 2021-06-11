@@ -69,7 +69,7 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 - Pull data using google json api
 - Render data on page 
 - Allow user to choose favorites 
-- Save their choices in firebase
+- Save their choices in aws
 
 #### PostMVP 
 
