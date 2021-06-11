@@ -21,7 +21,7 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 
 ## Project Description
-All of Me
+dis app show many way to enjoy waching tv
 
 ## Google Sheet
 
