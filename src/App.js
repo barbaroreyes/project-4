@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+import ReactPlayer from "react-player";
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <ReactPlayer 
+     with='480px' 
+     height='240px'
+      controls 
+      url='hhttps://www.twitch.tv/videos/1050358400'
+      onReady={() => console.log('on ready')}
+      onStart={() => console.log('onStart')}
+      onPause={() => console.log('onPause')}
+      onEnded={() => console.log('onEnded')}
+      onError={() => console.log('onError')}
+      />
     </div>
   );
 }
