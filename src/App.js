@@ -21,6 +21,17 @@ function App() {
 
   return (
     <div className="App">
+      <Switch>
+        <Route exact path ='/'>
+          Landing Page
+       </Route>
+       <Route exact path ='/home'>
+         categories </Route>
+         
+         <Route path ='/home/category'>
+         category
+       </Route>
+       
       {movie.map((item,i)=>{
         return (<>
         
@@ -37,7 +48,7 @@ function App() {
       />
         </>)
       })}
-    
+    </Switch>
     </div>
   );
 }
