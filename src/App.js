@@ -1,6 +1,7 @@
 import React , {useState,useEffect} from 'react';
 import {Switch,Route,Link} from 'react-router-dom'
 import ReactPlayer from "react-player";
+import LandingPage from "./components/landinpage"
 import './App.css';
 
 function App() {
@@ -23,7 +24,7 @@ function App() {
     <div className="App">
       <Switch>
         <Route exact path ='/'>
-          Landing Page
+          <LandingPage/>
        </Route>
        <Route exact path ='/home'>
          categories </Route>
