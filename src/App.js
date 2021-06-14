@@ -28,7 +28,7 @@ function App() {
     <div className="App">
       <AmplifySignOut/>
       <h2>content</h2>
-      {/* <Switch>
+      <Switch>
         <Route exact path ='/'>
           <LandingPage/>
        </Route>
@@ -55,7 +55,7 @@ function App() {
       />
         </>)
       })}
-    </Switch> */}
+    </Switch>
     </div>
   );
 }
