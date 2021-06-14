@@ -2,8 +2,12 @@ import React , {useState,useEffect} from 'react';
 import {Switch,Route,Link} from 'react-router-dom'
 import ReactPlayer from "react-player";
 import LandingPage from "./components/landinpage"
+import Amplify  from 'aws-amplify';
+import awsconfi from './aws-exports';
+import {AmplifySignOut,withAuthenticator} from '@aws-amplify/ui-react';
 import './App.css';
 
+Amplify.configure(awsconfi)
 function App() {
   const [movie , setMovie] = useState([])
   const url= 'https://chknksciok.execute-api.us-east-2.amazonaws.com/dev-3'
@@ -22,7 +26,9 @@ function App() {
 
   return (
     <div className="App">
-      <Switch>
+      <AmplifySignOut/>
+      <h2>content</h2>
+      {/* <Switch>
         <Route exact path ='/'>
           <LandingPage/>
        </Route>
@@ -49,9 +55,9 @@ function App() {
       />
         </>)
       })}
-    </Switch>
+    </Switch> */}
     </div>
   );
 }
 
-export default App;
+export default withAuthenticator( App);
