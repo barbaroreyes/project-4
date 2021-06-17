@@ -27,10 +27,9 @@ function App() {
   return (
     <div className="App">
       <AmplifySignOut/>
-      <h2>content</h2>
       <Switch>
         <Route exact path ='/'>
-          <LandingPage/>
+          <LandingPage movie={movie}/>
        </Route>
        <Route exact path ='/home'>
          categories </Route>
